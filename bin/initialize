@@ -1,0 +1,18 @@
+#!/bin/bash
+
+project_name=$1
+namespace=$2
+
+sed -i.bak s/ionic-starter/$project_name/ capacitor.config.json
+sed -i.bak s/io.ionic.starter/$namespace/ capacitor.config.json
+sed -i.bak s/ionic-starter/$project_name/ ionic.config.json
+sed -i.bak s/ionic-starter/$project_name/ package-lock.json
+sed -i.bak s/ionic-starter/$project_name/ package.json
+
+rm -rf capacitor.config.json.bak
+rm -rf ionic.config.json.bak
+rm -rf package-lock.json.bak
+rm -rf package.json.bak
+
+npx ionic cap add android
+npx ionic cap add ios
