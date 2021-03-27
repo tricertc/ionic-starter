@@ -1,5 +1,8 @@
 #!/bin/bash
 
+git init
+npm install
+
 project_name=$1
 namespace=$2
 

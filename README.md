@@ -2,14 +2,10 @@
 
 ## Getting Started
 
-To get started, copy the repository and run the following commands.
-
-Note, it's important to initialize your local git repository before running the `npm install` command. The install process will create pre-commit hooks.
+To get started, copy the repository and run the following commands to clone and initialize your project.
 
 ```
 $ npx degit tricertc/ionic-starter#main <app-name>
-$ git init
-$ npm install
 $ sh bin/initialize <app-name> <com.namespace.app>
 ```
 
