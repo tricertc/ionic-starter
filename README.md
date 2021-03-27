@@ -6,6 +6,7 @@ To get started, copy the repository and run the following commands to clone and 
 
 ```
 $ npx degit tricertc/ionic-starter#main <app-name>
+$ cd <app-name>
 $ sh bin/initialize <app-name> <com.namespace.app>
 ```
 
