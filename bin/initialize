@@ -14,5 +14,10 @@ rm -rf ionic.config.json.bak
 rm -rf package-lock.json.bak
 rm -rf package.json.bak
 
+npx ionic cap sync
 npx ionic cap add android
 npx ionic cap add ios
+
+rm -rf bin
+git add .
+git commit -m "initial commit"
