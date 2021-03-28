@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prettier": "prettier \"src/**/*.{scss,ts}\" --list-different"
+    "prettier": "prettier \"src/**/*.{html,scss,ts}\" --list-different"
   },
   "private": true,
   "dependencies": {
@@ -77,7 +77,7 @@
     "*.ts": [
       "eslint --fix"
     ],
-    "*.scss": [
+    "*.{html,scss}": [
       "prettier --write"
     ]
   },
