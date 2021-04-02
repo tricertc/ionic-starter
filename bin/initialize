@@ -22,6 +22,11 @@ npx ionic cap sync
 #npx ionic cap add android
 #npx ionic cap add ios
 
+for file in `find src -name .gitkeep`
+do
+  rm $file
+done
+
 rm -rf bin
 git add .
 git commit -m "initial commit"
