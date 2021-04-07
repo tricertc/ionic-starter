@@ -87,6 +87,16 @@
     ]
   },
   "prettier": {
-    "arrowParens": "avoid"
+    "arrowParens": "avoid",
+    "overrides": [
+      {
+        "files": [
+          "src/**/*.html"
+        ],
+        "options": {
+          "printWidth": 100
+        }
+      }
+    ]
   }
 }
