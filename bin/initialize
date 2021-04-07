@@ -4,8 +4,10 @@ git init
 git checkout -b main
 npm install
 
-project_name=$1
-namespace=$2
+directory=$(basename `pwd`)
+
+project_name=$(echo $directory | sed "s/[-_]/./g")
+namespace="com.$project_name.app"
 
 sed -i.bak s/ionic-starter/$project_name/ capacitor.config.json
 sed -i.bak s/io.ionic.starter/$namespace/ capacitor.config.json
@@ -19,8 +21,6 @@ rm -rf package-lock.json.bak
 rm -rf package.json.bak
 
 npx ionic cap sync
-#npx ionic cap add android
-#npx ionic cap add ios
 
 for file in `find src -name .gitkeep`
 do
