@@ -5,6 +5,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "files.insertFinalNewline": true,
     "editor.snippetSuggestions": "inline"
   }
 }
