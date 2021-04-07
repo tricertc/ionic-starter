@@ -77,7 +77,7 @@
     "*.ts": [
       "eslint --fix"
     ],
-    "*.{html,scss}": [
+    "*.{scss}": [
       "prettier --write"
     ]
   },
